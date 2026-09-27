@@ -16,16 +16,17 @@
 | **Bass Boosted** | Equalizer | Bas ağırlıklı EQ |
 | **Bass Enhancing + Perfect EQ** | Equalizer → Convolver | Perfect EQ + surround/bas convolver |
 
-> **Not:** *Bass Enhancing + Perfect EQ* presetindeki convolver, `Razor Surround ((48k Z-Edition)) 2.Stereo +20 bass` impulse dosyasını ister. Bu dosya depoda yok; `~/.local/share/easyeffects/irs/` klasörüne ayrıca koyman gerekir.
+> **Not:** *Bass Enhancing + Perfect EQ* presetindeki convolver, `irs/` klasöründeki impulse dosyasını kullanır (kaynak: [JackHack96/EasyEffects-Presets](https://github.com/JackHack96/EasyEffects-Presets), MIT).
 
 ## Kurulum
 
 ```sh
 git clone https://github.com/bedirhanbosna/easy-effects.git
 cp easy-effects/*.json ~/.local/share/easyeffects/output/
+cp easy-effects/irs/*.irs ~/.local/share/easyeffects/irs/
 ```
 
-Flatpak sürümü için hedef klasör: `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output/`
+Flatpak sürümü için `~/.local/share/easyeffects/` yerine `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/` kullan.
 
 Sonra Easy Effects → **Presets** menüsünden istediğini seç.
 
